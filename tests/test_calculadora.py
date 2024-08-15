@@ -1,4 +1,10 @@
+import sys
+import os
 import unittest
+
+# Add the 'src' directory to the Python path so 'calculadora' can be imported
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
 from calculadora import calcular
 
 
